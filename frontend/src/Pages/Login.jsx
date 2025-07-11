@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import Banner from '../Images/signupBanner.png';
+import Banner from '../Images/signUpBanner.png';
 import { useAuth } from "../context/authContext";
 
 const Login = () => {
