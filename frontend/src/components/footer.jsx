@@ -1,5 +1,5 @@
 import React from 'react'
-import ShipIcon from "../Images/shipicon.png"
+import ShipIcon from "../Images/shipIcon.png"
 import DhlLogo from "../Images/dhl-logo.png"
 import MasterCard from "../Images/master-card.png"
 import Paypal from "../Images/paypal-card.png"
