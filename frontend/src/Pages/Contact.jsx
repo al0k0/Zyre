@@ -23,7 +23,7 @@ const ContactPage = () => {
     }
 
     try {
-      const response = await fetch('http://localhost:5000/api/contacts/submit-form', {
+      const response = await fetch('https://zyre-1.onrender.com/api/contacts/submit-form', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),

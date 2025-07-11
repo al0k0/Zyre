@@ -15,7 +15,7 @@ const [showModal, setShowModal] = useState(false);
   useEffect(() => {
     const getInfo = async () => {
       try {
-        const res = await fetch(`http://localhost:5000/api/products/product/${productId}`);
+        const res = await fetch(`https://zyre-1.onrender.com/api/products/product/${productId}`);
         const data = await res.json();
         setInfo(data);
         

@@ -12,7 +12,7 @@ const Products = ({ selectedCategoryId }) => {
 const {addToCart} = useCart()
   useEffect(() => {
     if (categoryId) {
-      fetch(`http://localhost:5000/api/products/${categoryId}`)
+      fetch(`https://zyre-1.onrender.com/api/products/${categoryId}`)
         .then((res) => res.json())
         .then((data) => setProducts(data))
         .catch((err) => console.error("Error fetching products:", err));
