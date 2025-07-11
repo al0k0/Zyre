@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.card {
+    position: relative;
+    overflow: hidden;
+}
+
+.Price {
+    transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.Add-to-cart {
+    position: absolute;
+    left: 16%;
+    transform: translateX(-50%) translateY(100%);
+    opacity: 0; /* Pehle se invisible rahega */
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease-in-out;
+}
+
+.card:hover .Price {
+    opacity: 0;
+}
+
+.card:hover .Add-to-cart {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+}
+
+@keyframes spin-slow {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(90deg);
+    }
+  }
+  
+  .animate-spin-slow {
+    animation: spin-slow 10s linear infinite;
+  }
+
+  
+  /* Ensure pagination is visible */
+.swiper-pagination {
+  position: relative !important;  /* Default absolute hota hai, isko relative kiya */
+  margin-top: 40px; /* Dots ko neeche shift karne ke liye */
+  display: flex;
+  justify-content: center;
+}
+
+.swiper-pagination-bullet {
+  width: 12px !important;  /* Default se bada */
+  height: 12px !important; /* Default se bada */
+  background: rgb(182, 180, 180) !important; /* Dot color */
+  opacity: 1 !important; /* Hamesha visible */
+}
+
+/* Active pagination dot */
+.swiper-pagination-bullet-active {
+  width: 15px !important; /* Active dot aur bada */
+  height: 15px !important;
+  background: rgb(150, 149, 149) !important; /* Active dot ka color */
+}
+
+.custom-curve {
+  clip-path: ellipse(75% 100% at 0% 50%);
+}
