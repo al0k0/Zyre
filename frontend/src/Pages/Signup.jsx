@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import Banner from '../Images/signupBanner.png'
+import Banner from '../Images/signUpBanner.png'
 
 const Signup = () => {
   const [formData, setFromData] = useState({
